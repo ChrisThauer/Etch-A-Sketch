@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  height: 600px;
+  width: 600px;
+  border: 2px solid black;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 25% 25% 25% 25%;
+}
+
+.square {
+  border: 1px solid black;
+}
