@@ -1,3 +1,4 @@
+// Create the grid
 const squares = 16;
 let containerWidth = 596;
 let containerHeight = 596;
@@ -13,4 +14,12 @@ for (let i = 0; i < squares; i++) {
     container.appendChild(div);
   }
 }
-console.log(container);
+
+// Add a listener to each square so that the background of each square
+// changes to black when the mouse first enters the square
+let squareArray = [...document.getElementsByClassName('square')];
+squareArray.forEach(item => {
+  item.addEventListener('mouseenter', function () {
+    this.style.backgroundColor = '#000';
+  });
+});
